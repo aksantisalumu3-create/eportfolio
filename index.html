@@ -279,7 +279,71 @@
         </div>
       </div>
     </section>
+    <section id="discovery-project" style="padding:40px;">
+  <h2>Discovery Project: Wearable Heart-Rate & Stress Indicator Band</h2>
 
+  <h3>The Problem</h3>
+  <p>
+    Monitoring physiological signals like heart rate and stress levels is an important part of modern health technology. Many commercial solutions exist, but they often function as “black boxes” with limited transparency. For my Discovery Project, I wanted to build a simplified, hands-on version of a wearable health device to better understand how these systems work at a fundamental level.
+  </p>
+
+  <h3>The Idea</h3>
+  <p>
+    I designed a wearable (or fingertip-based) device that uses a PPG (photoplethysmography) pulse sensor to measure heart rate and compute BPM (beats per minute). As a stretch goal, I explored incorporating a GSR (galvanic skin response) sensor to estimate stress levels using changes in skin conductivity. The system outputs real-time data through an OLED display or serial monitor.
+  </p>
+
+  <h3>The Process</h3>
+  <p>
+    The project was developed in stages. First, I selected components and set up the Arduino development environment. I interfaced the pulse sensor and began by reading raw analog signals using the Serial Plotter. From there, I implemented signal processing techniques such as peak detection and moving average filtering to convert the raw waveform into a stable BPM value.
+  </p>
+
+  <p>
+    After achieving consistent heart rate readings, I worked on improving usability by adding a display and refining the physical setup. This included organizing wiring, considering wearable mounting options, and ensuring reliable sensor placement for accurate readings.
+  </p>
+
+  <h3>Progress, Successes, and Challenges</h3>
+  <p>
+    One of the major successes of this project was successfully capturing a clean pulse waveform and converting it into a stable BPM output. This required careful adjustment of sensor placement, lighting conditions, and sampling rate. I also gained confidence in debugging using the Serial Plotter.
+  </p>
+
+  <p>
+    A key challenge was dealing with noisy analog signals. Early readings were inconsistent and highly variable, which required me to apply filtering techniques and refine my peak detection logic. Additionally, integrating multiple components while maintaining reliable performance required iterative testing and troubleshooting.
+  </p>
+
+  <h3>ECE Skills Gained</h3>
+  <ul>
+    <li>Analog sensor interfacing and circuit wiring</li>
+    <li>Microcontroller programming using Arduino</li>
+    <li>Signal sampling and noise reduction techniques</li>
+    <li>Basic signal processing (peak detection and averaging)</li>
+    <li>Debugging using serial output and visualization tools</li>
+  </ul>
+
+  <h3>The Outcome</h3>
+  <p>
+    The project successfully demonstrated the ability to measure and display heart rate in real time. The system was able to produce stable BPM readings using a pulse sensor and basic filtering techniques. As an extension, I explored the use of GSR data to create a simple stress indicator categorized as low, medium, or high.
+  </p>
+
+  <h3>Final Thoughts</h3>
+  <p>
+    This project significantly strengthened my understanding of how embedded systems interact with real-world signals. It reinforced my interest in the intersection of electrical engineering and health technology. I also gained a deeper appreciation for the challenges involved in signal processing and hardware integration. In the future, I would like to continue developing this project by improving accuracy, refining the wearable design, and exploring more advanced physiological sensing techniques.
+  </p>
+
+  <h3>Project Timeline</h3>
+  <ul>
+    <li><strong>Week 1:</strong> Selected components, set up Arduino environment</li>
+    <li><strong>Week 2:</strong> Read and analyzed raw pulse signal</li>
+    <li><strong>Week 3:</strong> Implemented BPM calculation and filtering</li>
+    <li><strong>Week 4:</strong> Added display and improved hardware setup</li>
+    <li><strong>Week 5:</strong> Explored GSR integration for stress measurement</li>
+    <li><strong>Week 6:</strong> Final testing, documentation, and portfolio update</li>
+  </ul>
+
+  <h3>Project Presentation</h3>
+  <p>
+    A video presentation walking through this project, including design decisions, challenges, and outcomes, will be included here.
+  </p>
+</section>
     <section id="contact" class="section">
       <div class="container contact-card">
         <div>
